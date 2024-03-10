@@ -105,7 +105,7 @@
    * @return {string}
    */
   function sanitizeWord (token, word, rules) {
-    // Empty string or doesn't need fixing.
+    // Empty string or uncountables don't need fixing.
     if (!token.length || uncountables.hasOwnProperty(token)) {
       return word;
     }
